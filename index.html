@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="/src/app/assets/styles/animations.css">
+  <link rel="stylesheet" href="/src/app/assets/styles/mediaqueries.css">
+  <link rel="stylesheet" href="/src/app/assets/styles/style.css">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <img class="logo-header" src="/src/app/assets/pictures/logo.png" alt="Tecsisman Logo">
+
+      <ul class="navlist">
+        <li><a class="list" href="#home">Inicio</a></li>
+        <li><a class="list" href="#about">Nosotros</a></li>
+        <li><a class="list" href="#products">productos</a></li>
+        <li><a class="list" href="#contact">Contacto</a></li>
+      </ul>
+
+      <div class="toggle-menu">
+        <img src="/src/app/assets/pictures/menu.png" alt="" class="menu-icon">
+      </div>
+      <div class="toggle-cart">
+        <img src="/src/app/assets/pictures/cartIcon.png" alt="shopping cart" class="cart-icon">
+      </div>
+      <div class="cart-box">
+        <h2>Tus productos</h2>
+        <div class="cart-items">
+
+        </div>
+        <span class="separator"></span>
+        <div class="total">
+          <h4>Total</h4>
+          <span class="value"></span>
+        </div>
+        <div class="cart-buttons">
+          <button class="buy">Comprar</button>
+          <button class="delete">Vaciar Carrito</button>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </nav>
+  </header>
+  <main>
+    <section class="info" id="home">
+      <img src="src/app/assets/pictures/headerBackground.png" alt="header background" class="background-info">
+      <div class="container">
+        <div class="container-title">
+          <h2>TECSISMAN</h2>
+          <p>Tecnología a tu alcance soluciones a tu medida</p>
+        </div>
+        <div class="container-lists">
+          <dl>
+            <div class="containet-list-details">
+              <p>Productos de Calidad</p>
+              <h2>+500</h2>
+            </div>
+            <div class="containet-list-details">
+              <p>De domingo a domingo </p>
+              <h2>Atención</h2>
+            </div>
+            <div class="containet-list-details">
+              <p>Contra-Entrega</p>
+              <h2>Pagos</h2>
+            </div>
+            <div class="containet-list-details">
+              <p>Asegurada</p>
+              <h2>Garantía</h2>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-section" id="products">
+      <h2>Products</h2>
+
+      <div class="categories">
+        <button class="category active">Todo</button>
+        <button class="category" data-category="smartphones">SmartPhones</button>
+        <button class="category" data-category="monitors">Monitores</button>
+        <button class="category" data-category="laptops">Laptops</button>
+        <button class="category" data-category="security">Seguridad</button>
+        <button class="category" data-category="others">️Otros</button>
+      </div>
+
+      <div class="products-container">
+
+      </div>
+      <button class="btn-load">Ver Más</button>
+
+    </section>
+
+  </main>
+  <footer>
+    <img class="logo" src="/src/assets/pictures/logo.png" alt="Logo-footer">
+    <div class="contact"> <!--la información de contacto y la localización con el mapa, se encuentra aquí-->
+      <h2>contactanos</h2>
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/biotech_sphere/" target="_blank"><img class="network"
+              src="src/assets/img/instagram.png" alt=""></a>
+        </li>
+        <li>
+          <a href="https://wa.me/+573163202647" target="_blank"><img class="network" src="assets/img/whatsapp.png"
+              alt=""></a>
+        </li>
+        <li>
+          <a href="https://www.google.com/maps/@5.0539608,-75.4845921,3a,75y,45.31h,90t/data=!3m7!1e1!3m5!1ssCfKL9bU7RtUGnFeGnHGNA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DsCfKL9bU7RtUGnFeGnHGNA%26cb_client%3Dmaps_sv.tactile.gps%26w%3D203%26h%3D100%26yaw%3D45.19595%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192?entry=ttu"
+            target="_blank"><img class="network" src="src/assets/img/maps.png" alt=""></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <div id="app"></div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
