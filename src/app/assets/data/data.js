@@ -1199,6 +1199,7 @@ export const productsInfo = [
 
 
 const DivideProductsInParts = (size) => {
+    
     let productsList = [];
     for (let i = 0; i < productsInfo.length; i += size)
         productsList.push(productsInfo.slice(i, i + size));
@@ -1207,8 +1208,8 @@ const DivideProductsInParts = (size) => {
 
 
 export const appState = {
-    products: DivideProductsInParts(8),
+    products: DivideProductsInParts(4),
     currentProductsIndex: 0,
-    productsLimit: DivideProductsInParts(8).length,
+    productsLimit: DivideProductsInParts(4).length,
     activeFilter: null,
 };

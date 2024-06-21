@@ -70,12 +70,12 @@ header {
 }
 
 .list {
-	color: white;
+	color: #d9e8ef;
 	font-size: large;
 }
 
 .navlist li:first-child > a {
-	color: var(--text-white);
+	color: var(--text- #d9e8ef);
 	font-weight: 600;
 }
 
@@ -219,10 +219,12 @@ main {
 .products-section {
 	place-content: center;
 	display: flex;
+	flex-wrap: nowrap;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	gap: 2rem;
+	width: 100%;
 }
 .categories {
 	display: flex;
@@ -239,15 +241,53 @@ main {
 	border: 0.1rem ridge #000000;
 	background: #000000;
 }
+
+.products-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 2rem;
+	width: 100%;
+	gap: 4rem;
+}
+#brands-container {
+	display: flex;
+	flex-wrap: nowrap;
+	margin: 0 auto;
+	gap: 2rem;
+}
+
+#brands-container label {
+	font-weight: 700;
+	font-size: larger;
+	color: #d9e8ef;
+	letter-spacing: 0.1rem;
+}
+
+#brands-container select {
+	border-radius: 0.5rem;
+	font-weight: 600;
+	font-size: medium;
+	border: 0.15rem ridge #002fff;
+	text-align: center;
+	background-color: #000000;
+	color: white;
+	width: 10rem;
+	padding: 0.2rem 0;
+	gap: 2rem;
+}
+#brands-container option {
+	font-weight: 600;
+}
 .products-container {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-around;
 	gap: 2rem;
-	margin-top: 4rem;
-	padding: 0 5rem;
-	max-width: 100%;
+
+	padding: 0 1rem;
+	min-width: 80%;
 }
 .product {
 	width: 30rem;
@@ -321,7 +361,7 @@ footer {
 	align-items: center;
 	overflow: hidden;
 	border-radius: 1rem 1rem 0 0;
-	padding: 0 10%;
+	padding: 1rem 10%;
 	margin-top: 5%;
 	gap: 1rem;
 	box-shadow: 0px -10px 7px 0px rgba(143, 143, 208, 0.37);
@@ -336,10 +376,6 @@ footer {
 		rgba(4, 2, 124, 1) 60%,
 		rgba(2, 0, 29, 1) 90%
 	);
-	.logo {
-		width: 7rem;
-		height: 7rem;
-	}
 
 	.contact {
 		width: 50%;
@@ -347,7 +383,7 @@ footer {
 		list-style: none;
 		padding: 0 10%;
 		align-items: center;
-		margin-left: 30%;
+		margin-left: 25%;
 
 		ul {
 			place-content: center;
@@ -362,5 +398,20 @@ footer {
 				}
 			}
 		}
+	}
+	.contact ul {
+		display: flex;
+		gap: 2rem;
+	}
+	.contact h2 {
+		color: #d9e8ef;
+	}
+	.logo-footer {
+		width: 4rem;
+		height: 4rem;
+	}
+	.copyrigth {
+		color: #d9e8ef;
+		width: 35rem;
 	}
 }
