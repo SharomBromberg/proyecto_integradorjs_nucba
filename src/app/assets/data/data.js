@@ -1197,7 +1197,7 @@ export const productsInfo = [
 ];
 
 
-//Función paginadora
+
 const DivideProductsInParts = (size) => {
     let productsList = [];
     for (let i = 0; i < productsInfo.length; i += size)
@@ -1205,10 +1205,10 @@ const DivideProductsInParts = (size) => {
     return productsList;
 };
 
-//Función para dividir los productos en arrays de 6 productos y manejar la páginación
+
 export const appState = {
-    products: DivideProductsInParts(6),
+    products: DivideProductsInParts(8),
     currentProductsIndex: 0,
-    productsLimit: DivideProductsInParts(6).length,
+    productsLimit: DivideProductsInParts(8).length,
     activeFilter: null,
 };
