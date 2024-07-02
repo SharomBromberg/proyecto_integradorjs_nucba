@@ -1,11 +1,21 @@
+@font-face {
+	font-family: 'Exo2';
+	src: url('../assets/fonts/Exo_2/static/Exo2-Medium.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	text-decoration: none;
 	list-style-type: none;
+	width: 100%;
 }
 body {
+	font-family: 'Exo2', sans-serif;
+	scroll-padding-top: 100vh;
+	min-height: 100vh;
 	max-width: 100%;
 	overflow-x: hidden;
 	background: rgb(60, 59, 75);
@@ -20,20 +30,20 @@ body {
 		rgba(0, 0, 0, 1) 100%
 	);
 }
+
 header {
 	display: flex;
 	width: 100%;
 	position: fixed;
-	justify-content: space-around;
-	align-items: center;
+	justify-content: space-between;
 	height: 4rem;
-
 	z-index: 100;
 }
 .navbar {
 	display: flex;
 	width: 100%;
-	gap: 14rem;
+	gap: 1rem;
+	padding: 1rem;
 	background: rgb(2, 0, 29);
 	background: linear-gradient(
 		90deg,
@@ -51,40 +61,29 @@ header {
 	align-items: center;
 	justify-content: center;
 }
-.navlist {
-	display: flex;
-	gap: 3rem;
-	align-items: center;
-	justify-content: center;
-	color: #d9e8ef;
+.navbar-logo {
+	width: 5rem;
+	height: 5rem;
+	margin-left: 4rem;
 }
-.logo-header {
-	width: 4rem;
-	height: 4rem;
+.bars-menu {
+	position: absolute;
+	flex-direction: column;
 }
-.navlist {
-	display: flex;
+
+.navitems {
 	align-items: center;
 	justify-content: center;
 	gap: 8rem;
 }
 
-.list {
+.link {
 	color: #d9e8ef;
 	font-size: large;
-}
 
-.navlist li:first-child > a {
-	color: var(--text- #d9e8ef);
-	font-weight: 600;
-}
-
-.toggle-menu {
-	display: none;
-}
-.toggle-menu .menu-icon {
-	width: 2rem;
-	height: 2rem;
+	&:hover {
+		color: #b5fffc;
+	}
 }
 
 .toggle-cart {
@@ -151,7 +150,7 @@ main {
 	margin-left: 5%;
 	margin-right: auto;
 	max-width: 70%;
-	margin-top: 8rem;
+	margin-top: 6rem;
 }
 
 .container-title {
@@ -175,21 +174,21 @@ main {
 }
 
 .container-lists {
+	display: flex;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 5rem;
+	margin-top: 1rem;
 	color: #d9e8ef;
 
 	dl {
 		display: flex;
-		flex-wrap: wrap;
-		gap: 4rem;
+		gap: 1rem;
 		margin-top: 3rem;
 		animation: forwards 1s;
 	}
 }
 
-.containet-list-details {
+.containet-lists-details {
 	display: flex;
 	flex-direction: column-reverse;
 
@@ -224,7 +223,7 @@ main {
 	justify-content: space-around;
 	align-items: center;
 	gap: 2rem;
-	width: 100%;
+	width: 70%;
 }
 .categories {
 	display: flex;
