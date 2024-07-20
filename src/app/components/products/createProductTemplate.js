@@ -1,8 +1,8 @@
 //create-product.js
 
-export const createProduct = (product) => {
-    const { name, imageURL, price, brand, id } = product
-    return `
+export const createProductTemplate = (product) => {
+  const { name, imageURL, price, brand, id } = product
+  return `
     <div class="product">
       <div class="img-container">
         <img src=${imageURL} alt=${name} />
@@ -15,7 +15,7 @@ export const createProduct = (product) => {
       <span>${price} USD</span>
 
       <div class="product-actions">
-        <button class="button-add" data-id="${id}" data-brand="${brand}" data-name="${name}" data-price="${price}"
+        <button class="btn-add" data-id="${id}" data-brand="${brand}" data-name="${name}" data-price="${price}"
           data-imageURL="${imageURL}">Añadir al carrito</button>
       </div>
     </div>

@@ -17,13 +17,6 @@
 		font-family: 'Exo2', sans-serif;
 		scroll-padding-top: 100vh;
 		min-height: 100vh;
-		background: linear-gradient(
-			160deg,
-			#a3fef790,
-			#68b0db20,
-			#68b0db90,
-			#a3fef720
-		);
 
 		main {
 			place-content: center;
@@ -91,13 +84,20 @@
 		gap: 1rem;
 	}
 	.category {
+		background: linear-gradient(
+			90deg,
+			rgba(2, 0, 29, 1) 0%,
+			rgba(4, 2, 124, 1) 20%,
+			rgba(29, 21, 150, 1) 42%,
+			rgba(4, 2, 124, 1) 60%,
+			rgba(2, 0, 29, 1) 90%
+		);
 		color: #ffffff;
 		font-size: larger;
 		font-weight: 700;
 		padding: 1rem 0.01rem;
 		border-radius: 0.7rem;
-		border: 0.1rem ridge #000000;
-		background: #000000;
+		border: 0.2rem ridge #000000;
 	}
 	#brands-container {
 		display: flex;
@@ -121,16 +121,24 @@
 		place-content: center;
 		border-radius: 0.5rem;
 		font-weight: 600;
-		font-size: x-large;
-		border: 0.15rem ridge #002fff;
+		font-size: larger;
+		border: 0.15rem ridge #aab5e7;
 		text-align: center;
-		background-color: #000000;
+		background: linear-gradient(
+			90deg,
+			rgba(2, 0, 29, 1) 0%,
+			rgba(4, 2, 124, 1) 20%,
+			rgba(29, 21, 150, 1) 42%,
+			rgba(4, 2, 124, 1) 60%,
+			rgba(2, 0, 29, 1) 90%
+		);
 		color: white;
 
 		gap: 2rem;
 	}
 	#brands-container option {
 		font-weight: 600;
+		font-size: large;
 	}
 	.products-box {
 		flex-direction: column;
@@ -152,7 +160,17 @@
 	.product {
 		width: 35rem;
 		height: 40rem;
-		background: #2d218c;
+		background: rgb(2, 0, 29);
+		background: linear-gradient(
+			90deg,
+			rgba(2, 0, 29, 1) 0%,
+			rgba(4, 2, 124, 1) 16%,
+			rgba(54, 21, 150, 1) 31%,
+			rgba(73, 30, 129, 1) 42%,
+			rgba(112, 57, 157, 1) 71%,
+			rgba(65, 19, 150, 1) 90%,
+			rgba(45, 33, 140, 1) 100%
+		);
 		box-shadow: -9px 10px 10px -7px rgba(255, 255, 255, 1);
 		-webkit-box-shadow: -9px 10px 10px -7px rgba(255, 255, 255, 1);
 		-moz-box-shadow: -9px 10px 10px -7px rgba(255, 255, 255, 1);
@@ -179,7 +197,7 @@
 		object-position: center;
 		margin: 0 auto;
 	}
-	.button-add {
+	.btn-add {
 		border-radius: 0.7rem;
 		place-content: center;
 		color: #d9e8ef;
@@ -261,10 +279,6 @@
 		align-items: center;
 		margin-right: 5%;
 		margin-left: 25%;
-
-		.login {
-			display: flex;
-		}
 	}
 
 	.link {
@@ -495,6 +509,11 @@
 		height: 2rem;
 	}
 
+	.cart-icon {
+		border: 0px solid;
+		align-self: center;
+	}
+
 	main {
 		overflow-x: hidden;
 	}
@@ -537,13 +556,20 @@
 		gap: 1rem;
 	}
 	.category {
+		background: linear-gradient(
+			90deg,
+			rgba(2, 0, 29, 1) 0%,
+			rgba(4, 2, 124, 1) 20%,
+			rgba(29, 21, 150, 1) 42%,
+			rgba(4, 2, 124, 1) 60%,
+			rgba(2, 0, 29, 1) 90%
+		);
 		color: #ffffff;
 		font-size: larger;
 		font-weight: 700;
 		padding: 4rem;
 		border-radius: 0.7rem;
-		border: 0.1rem ridge #000000;
-		background: #000000;
+		border: 0.2rem ridge #000000;
 	}
 	#brands-container {
 		display: flex;
@@ -569,8 +595,16 @@
 		font-weight: 600;
 		font-size: x-large;
 		border: 0.15rem ridge #002fff;
+
 		text-align: center;
-		background-color: #000000;
+		background: linear-gradient(
+			90deg,
+			rgba(2, 0, 29, 1) 0%,
+			rgba(4, 2, 124, 1) 20%,
+			rgba(29, 21, 150, 1) 42%,
+			rgba(4, 2, 124, 1) 60%,
+			rgba(2, 0, 29, 1) 90%
+		);
 		color: white;
 
 		gap: 2rem;
@@ -609,7 +643,7 @@
 		width: 100%;
 		height: 100%;
 	}
-	.button-add {
+	.btn-add {
 		border-radius: 0.7rem;
 		place-content: center;
 		color: #d9e8ef;
@@ -736,11 +770,12 @@
 		max-width: 100%;
 		background-color: rgba(255, 255, 255, 0.512);
 		width: 90%;
-		height: 88%;
+		height: 78%;
 		margin: 5rem auto;
 		border-radius: 1rem;
 		place-content: center;
 		justify-content: space-around;
+		text-align: center;
 		padding: 1rem;
 	}
 
@@ -774,12 +809,19 @@
 		gap: 0.2rem;
 	}
 	.category {
+		background: linear-gradient(
+			90deg,
+			rgba(2, 0, 29, 1) 0%,
+			rgba(4, 2, 124, 1) 20%,
+			rgba(29, 21, 150, 1) 42%,
+			rgba(4, 2, 124, 1) 60%,
+			rgba(2, 0, 29, 1) 90%
+		);
 		color: #ffffff;
 		font-size: medium;
 		font-weight: 700;
 		border-radius: 0.4rem;
 		border: 0.1rem ridge #000000;
-		background: #000000;
 	}
 	#brands-container {
 		flex-direction: column;
@@ -808,7 +850,14 @@
 		font-size: medium;
 		border: 0.15rem ridge #002fff;
 		text-align: center;
-		background-color: #000000;
+		background: linear-gradient(
+			90deg,
+			rgba(2, 0, 29, 1) 0%,
+			rgba(4, 2, 124, 1) 20%,
+			rgba(29, 21, 150, 1) 42%,
+			rgba(4, 2, 124, 1) 60%,
+			rgba(2, 0, 29, 1) 90%
+		);
 		color: white;
 		gap: 2rem;
 	}
@@ -852,7 +901,7 @@
 		object-position: center;
 		margin: 0 auto;
 	}
-	.button-add {
+	.btn-add {
 		display: flex;
 		border-radius: 0.7rem;
 		place-content: center;

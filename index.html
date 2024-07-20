@@ -32,20 +32,20 @@
         <img src="/src/app/assets/pictures/cartIcon.png" alt="shopping cart" class="cart-icon">
         <div class="cart-bubble">0</div>
       </div>
-      <div class="cart-box">
-        <h2>Tus productos</h2>
-        <div class="cart-items">
+
+      <div class="cart">
+        <h2>Carrito de Compras</h2>
+        <div class="cart-container">
 
         </div>
-        <span class="separator"></span>
+        <span class="divider"></span>
         <div class="total">
           <h4>Total</h4>
-          <span class="value"></span>
+          <span class="total"></span>
         </div>
-        <div class="cart-buttons">
-          <button class="buy">Comprar</button>
-          <button class="delete">Vaciar Carrito</button>
-        </div>
+        <button class="btn-buy">Comprar</button>
+        <button class="btn-delete">Vaciar Carrito</button>
+
       </div>
       <div class="overlay"></div>
     </nav>
@@ -106,9 +106,9 @@
         <div class="products-container">
 
         </div>
+
       </div>
       <button class="btn-load">Ver Más</button>
-
     </section>
 
   </main>
@@ -133,6 +133,7 @@
       </ul>
     </div>
   </footer>
+  <div class="add-modal"></div>
   <div id="app"></div>
   <script type="module" src="/main.js"></script>
 </body>

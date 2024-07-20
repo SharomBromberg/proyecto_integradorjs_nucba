@@ -1004,7 +1004,7 @@ export const productsInfo = [
 
     {
         "name": "Momentum 2",
-        "imageURL": "https://media.graphassets.com/resize=w:1920,h:1080,fit:crop/quality=value:65/auto_image/compress/W6ceMn6KQpeOWT9AnqXA",
+        "imageURL": "https://media.graphassets.com/resize=w:1920,h:1080,fit:crop/quality=total:65/auto_image/compress/W6ceMn6KQpeOWT9AnqXA",
         "category": "others",
         "price": 399.95,
         "id": "gad19",
@@ -1199,7 +1199,7 @@ export const productsInfo = [
 
 
 const DivideProductsInParts = (size) => {
-    
+
     let productsList = [];
     for (let i = 0; i < productsInfo.length; i += size)
         productsList.push(productsInfo.slice(i, i + size));

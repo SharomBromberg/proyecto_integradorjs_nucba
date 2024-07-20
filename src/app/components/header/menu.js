@@ -2,7 +2,7 @@ const menuButton = document.querySelector('.toggle-menu');
 const barsMenu = document.querySelector('.navitems');
 const overlay = document.querySelector('.overlay');
 const cartButton = document.querySelector('.toggle-cart');
-const cartMenu = document.querySelector('.cart-box');
+const cartMenu = document.querySelector('.cart');
 
 const toggleMenu = () => {
     barsMenu.classList.toggle('active-menu');
