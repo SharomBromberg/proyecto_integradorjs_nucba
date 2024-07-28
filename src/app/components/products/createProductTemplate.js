@@ -16,7 +16,7 @@ export const createProductTemplate = (product) => {
 
       <div class="product-actions">
         <button class="btn-add" data-id="${id}" data-brand="${brand}" data-name="${name}" data-price="${price}"
-          data-imageURL="${imageURL}">Añadir al carrito</button>
+          data-img="${imageURL}">Añadir al carrito</button>
       </div>
     </div>
 

@@ -1,3 +1,4 @@
+//cart.js
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 const productsCart = document.querySelector(".cart-container");
 const total = document.querySelector(".total");
@@ -12,11 +13,13 @@ const saveCart = () => {
 
 
 const createCartProductTemplate = (cartProduct) => {
-    const { id, name, price, img, quantity } = cartProduct;
+    const { id, name, img, price, quantity } = cartProduct;
+    console.log("Cart Product Template Data:", { id, name, img, price, quantity }); // Verifica los datos del producto en el carrito
+
     return `
     <div class="cart-item">
-      <img src=${img} alt="Nft del carrito" />
-      <div class="item-info">
+ <img src=${img} alt=${name} />
+       <div class="item-info">
         <h3 class="item-title">${name}</h3>
         <p>Price</p>
         <span class="item-price">${price} USD</span>
@@ -32,7 +35,7 @@ const createCartProductTemplate = (cartProduct) => {
 
 const renderCart = () => {
     if (!cart.length) {
-        productsCart.innerHTML = `<p class="empty-msg">No hay productos en el carrito.</p>`;
+        productsCart.innerHTML = `<p class="empty-msg">¡ No hay productos en el carrito !</p>`;
         return;
     }
     productsCart.innerHTML = cart.map(createCartProductTemplate).join("");

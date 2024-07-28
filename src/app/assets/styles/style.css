@@ -39,9 +39,6 @@ header {
 .navbar {
 	display: flex;
 	width: 100%;
-	gap: 1rem;
-	padding: 1rem;
-	background: rgb(2, 0, 29);
 	background: linear-gradient(
 		90deg,
 		rgba(2, 0, 29, 1) 0%,
@@ -55,17 +52,13 @@ header {
 	-moz-box-shadow: 0px 10px 7px 0px rgba(143, 143, 208, 0.37);
 	border-radius: 0 0 1rem 1rem;
 	z-index: 100;
-	align-items: center;
-	justify-content: center;
 }
 .navbar-logo {
-	width: 5rem;
-	height: 5rem;
-	margin-left: 4rem;
+	display: flex;
 }
 .bars-menu {
-	position: absolute;
 	flex-direction: column;
+	transform: translate(9rem, 1rem);
 }
 
 .navitems {
@@ -86,6 +79,7 @@ header {
 .cart-icon {
 	width: 2rem;
 	height: 2rem;
+	transform: translate(120%);
 }
 .cart-bubble {
 	position: absolute;
@@ -104,7 +98,9 @@ header {
 	padding-left: 1px;
 	border-radius: 50%;
 }
-
+.toggle-cart {
+	margin: auto;
+}
 .cart {
 	display: flex;
 	flex-direction: column;
@@ -112,13 +108,12 @@ header {
 	transform: translate(150%);
 	top: 4rem;
 	right: 0;
-	padding: 4rem 2rem;
+	padding: 2rem 2rem 8rem;
 	background-color: #050d26;
-	gap: 2.5rem;
+	gap: 2rem;
 	height: calc(100vh);
 	overflow-y: scroll;
 	z-index: 2;
-	min-width: 27rem;
 }
 
 .cart-container {
@@ -139,15 +134,17 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 20px;
-	background-color: #2323234e;
-	padding: 20px;
-	border: 1px solid var(--electric);
+	gap: 1rem;
+	background-color: #002fff;
+	padding: 1rem;
+	border: 0.02rem solid;
 	border-radius: 10px;
 }
 .cart-item img {
-	height: 65px;
-	width: 65px;
+	height: 4rem;
+	width: 4rem;
+	border-radius: 2rem;
+	object-fit: cover;
 }
 .item-info {
 	display: flex;
@@ -167,7 +164,7 @@ header {
 .item-price {
 	background: linear-gradient(to right, #30cfd0, #c43ad6);
 	background-clip: text;
-	color: transparent;
+	color: white;
 	-webkit-background-clip: text;
 	font-size: 16px;
 	font-weight: 800;
@@ -180,23 +177,27 @@ header {
 }
 .quantity-handler {
 	display: flex;
+
 	justify-content: center;
 	align-items: center;
 	padding: 2px 8px;
 	border-radius: 5px;
 	color: var(--text-white);
-	font-weight: 400;
+	font-weight: 800;
 }
 .item-quantity {
 	color: var(--text-gray);
+	text-align: center;
 }
 .up {
 	border: 1px solid var(--electric);
+	background: antiquewhite;
 }
 
 .down {
 	background-color: var(--secondary);
 	border: 1px solid var(--electric);
+	background: antiquewhite;
 }
 .divider {
 	margin-top: 20px;
@@ -205,9 +206,11 @@ header {
 }
 .cart-total {
 	display: flex;
-	justify-content: space-between;
-	align-items: baseline;
+	color: aliceblue;
+	justify-content: space-around;
+	align-items: center;
 	width: 100%;
+	text-align: center;
 }
 .cart-total p {
 	color: var(--text-white);
@@ -221,10 +224,23 @@ header {
 .active-cart {
 	transform: translate(0%);
 	transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+	text-align: center;
+}
+.active-cart h2 {
+	color: #ffffff;
+}
+
+.btn-buy,
+.btn-delete {
+	display: flex;
+	box-shadow: 0.2rem 0.1rem 0rem 0px rgba(0, 0, 0, 0.75);
+
+	-webkit-box-shadow: 0.2rem 0.1rem 0rem 0px rgb(255, 255, 255);
 }
 .empty-msg {
 	color: var(--text-gray);
-	font-size: 14px;
+	font-size: 2rem;
+	color: #d60000;
 }
 
 main {
@@ -293,6 +309,7 @@ main {
 	place-content: center;
 	max-width: 100%;
 	padding: 2rem;
+	margin-top: 2rem;
 }
 .products-section {
 	place-content: center;
@@ -324,7 +341,6 @@ main {
 }
 
 #brands-container label {
-	font-weight: 400;
 	color: #d9e8ef;
 	letter-spacing: 0.1rem;
 }
@@ -367,19 +383,6 @@ main {
 
 footer {
 	display: flex;
-	width: 100%;
-	place-content: center;
-	justify-content: space-between;
-	align-items: center;
-	overflow: hidden;
-	border-radius: 1rem 1rem 0 0;
-	padding: 1rem 10%;
-	margin-top: 5%;
-	gap: 1rem;
-	box-shadow: 0px -10px 7px 0px rgba(143, 143, 208, 0.37);
-	-webkit-box-shadow: 0px -10px 7px 0px rgba(143, 143, 208, 0.37);
-	-moz-box-shadow: 0px -10px 7px 0px rgba(143, 143, 208, 0.37);
-	background: rgb(2, 0, 29);
 	background: linear-gradient(
 		90deg,
 		rgba(2, 0, 29, 1) 0%,
@@ -388,42 +391,26 @@ footer {
 		rgba(4, 2, 124, 1) 60%,
 		rgba(2, 0, 29, 1) 90%
 	);
-
+	.footer-presentation {
+		display: flex;
+	}
 	.contact {
-		width: 50%;
 		display: flex;
 		list-style: none;
-		padding: 0 10%;
-		align-items: center;
-		margin-left: 25%;
 
 		ul {
 			place-content: center;
-			width: 100%;
-			margin-left: 2rem;
 
 			li {
 				display: flex;
-
-				.network {
-					width: 1.5rem;
-				}
 			}
 		}
 	}
+
 	.contact ul {
 		display: flex;
-		gap: 2rem;
 	}
 	.contact h2 {
 		color: #d9e8ef;
-	}
-	.logo-footer {
-		width: 4rem;
-		height: 4rem;
-	}
-	.copyrigth {
-		color: #d9e8ef;
-		width: 35rem;
 	}
 }
