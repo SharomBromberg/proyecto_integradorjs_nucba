@@ -39,6 +39,7 @@ header {
 .navbar {
 	display: flex;
 	width: 100%;
+	align-items: center;
 	background: linear-gradient(
 		90deg,
 		rgba(2, 0, 29, 1) 0%,
@@ -58,13 +59,11 @@ header {
 }
 .bars-menu {
 	flex-direction: column;
-	transform: translate(9rem, 1rem);
 }
 
 .navitems {
 	align-items: center;
 	justify-content: center;
-	gap: 8rem;
 }
 
 .link {
@@ -76,31 +75,34 @@ header {
 	}
 }
 
+.toggle-cart {
+	display: flex;
+	position: relative;
+	place-content: center;
+	justify-content: space-around;
+	align-items: center;
+	width: 45%;
+}
 .cart-icon {
 	width: 2rem;
 	height: 2rem;
-	transform: translate(120%);
 }
 .cart-bubble {
-	position: absolute;
-	top: -8px;
-	right: -8px;
-	text-align: center;
-	background: var(--primary);
-	color: var(--text-white);
-	font-size: 10px;
-	font-weight: 500;
-	height: 18px;
-	width: 18px;
 	display: flex;
+	position: absolute;
+	/* right: 1.8rem; */
+	text-align: center;
+	background: white;
+	color: blue;
+	font-size: 0.7rem;
+	font-weight: 800;
+	height: 0.8rem;
+	width: 0.8rem;
 	justify-content: center;
 	align-items: center;
-	padding-left: 1px;
 	border-radius: 50%;
 }
-.toggle-cart {
-	margin: auto;
-}
+
 .cart {
 	display: flex;
 	flex-direction: column;
